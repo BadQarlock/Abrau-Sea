@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrau-Sea | Официальный сайт</title>
     <style>
-        /* Базовые настройки */
+
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
         * {
@@ -32,7 +32,6 @@
             align-items: center;
         }
 
-        /* --- БЛОК ТАЙТЛА (ГЛАВНЫЙ БАННЕР) --- */
         .title-section {
             width: 100%;
             text-align: center;
@@ -44,7 +43,6 @@
             width: 100%;
             max-width: 800px;
             border-radius: 24px;
-            /* Красивое неоновое свечение вокруг тайтла */
             box-shadow: 0 0 50px rgba(0, 255, 100, 0.3), 0 0 100px rgba(255, 0, 0, 0.15);
             border: 2px solid rgba(0, 255, 100, 0.4);
             transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -55,7 +53,6 @@
                 box-shadow: 0 0 70px rgba(0, 255, 100, 0.5), 0 0 120px rgba(255, 0, 0, 0.3);
             }
 
-        /* --- ОПИСАНИЕ ИГРЫ --- */
         .description {
             font-size: 1.15rem;
             line-height: 1.8;
@@ -70,7 +67,6 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* --- СЕТКА КОНТЕНТА (АВТОР + ГЕЙМПЛЕЙ) --- */
         .content-grid {
             display: flex;
             gap: 30px;
@@ -81,7 +77,6 @@
             flex-wrap: wrap;
         }
 
-        /* Карточка Автора */
         .author-card {
             background: rgba(15, 15, 15, 0.8);
             border: 2px solid #222;
@@ -104,7 +99,6 @@
             width: 180px;
             height: 180px;
             object-fit: contain;
-            /* Делаем аватарку круглой */
             border-radius: 50%;
             border: 3px solid #ff0000;
             padding: 10px;
@@ -132,7 +126,6 @@
             margin-top: 5px;
         }
 
-        /* Карточка Геймплея */
         .gameplay-card {
             background: rgba(15, 15, 15, 0.8);
             border: 2px solid #222;
@@ -160,7 +153,6 @@
             border: 1px solid #333;
         }
 
-        /* --- СЕКЦИЯ ССЫЛОК --- */
         .links-section {
             text-align: center;
             width: 100%;
@@ -169,11 +161,11 @@
         .links-title {
             font-size: 1.6rem;
             margin-bottom: 30px;
-            color: #ff0000; /* Ярко-красный */
+            color: #ff0000; 
             text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 900;
-            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.5); /* Усиленное красное свечение */
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.5); 
         }
 
         .links-container {
@@ -199,7 +191,6 @@
             letter-spacing: 1px;
         }
 
-            /* Базовый ховер (для кнопок без особого стиля) */
             .link-btn:hover {
                 background: #00ff64;
                 color: #000;
@@ -208,9 +199,6 @@
                 transform: translateY(-5px);
             }
 
-            /* --- ИНДИВИДУАЛЬНЫЕ СТИЛИ ДЛЯ КНОПОК --- */
-
-            /* YouTube — ярко-красное свечение в едином стиле */
             .link-btn.youtube {
                 border-color: #ff3333;
                 box-shadow: 0 0 12px rgba(255, 51, 51, 0.6), inset 0 0 8px rgba(255, 51, 51, 0.2);
@@ -224,7 +212,6 @@
                     transform: translateY(-5px);
                 }
 
-            /* MAX — ярко-фиолетовое свечение */
             .link-btn.max {
                 border-color: #a020f0;
                 box-shadow: 0 0 12px rgba(160, 32, 240, 0.6), inset 0 0 8px rgba(160, 32, 240, 0.2);
@@ -238,7 +225,6 @@
                     transform: translateY(-5px);
                 }
 
-            /* Telegram — ярко-голубое свечение */
             .link-btn.telegram {
                 border-color: #00bfff;
                 box-shadow: 0 0 12px rgba(0, 191, 255, 0.6), inset 0 0 8px rgba(0, 191, 255, 0.2);
@@ -252,7 +238,6 @@
                     transform: translateY(-5px);
                 }
 
-            /* ВКонтакте — ярко-синее свечение */
             .link-btn.vk {
                 border-color: #0066ff;
                 box-shadow: 0 0 12px rgba(0, 102, 255, 0.6), inset 0 0 8px rgba(0, 102, 255, 0.2);
@@ -266,7 +251,6 @@
                     transform: translateY(-5px);
                 }
 
-        /* Адаптивность для телефонов */
         @media (max-width: 768px) {
             .title-image {
                 max-width: 100%;
@@ -298,15 +282,11 @@
 
     <div class="container">
 
-        <!-- 1. ТАЙТЛ (ГЛАВНАЯ КАРТИНКА) -->
         <div class="title-section">
-            <!-- Путь к папке images из папки index -->
             <img src="../images/Title.png" alt="Abrau-Sea" class="title-image">
         </div>
 
-        <!-- 2. ОПИСАНИЕ -->
         <div class="description">
-            <!-- ВСТАВЬ СЮДА ТЕКСТ О СВОЕЙ ИГРЕ -->
             Добро пожаловать в официальный хаб проекта <b>Abrau-Sea</b>.<br>
 
             Тьма. Гул двигателя. И мины, которые ждут вас на каждом шагу.<br>
@@ -319,17 +299,13 @@
             [Вскоре здесь будет ссылка]
         </div>
 
-        <!-- 3. ГЕЙМПЛЕЙ (СКРИНШОТ) -->
         <div class="content-grid">
-            <!-- Карточка Геймплея -->
             <div class="gameplay-card">
                 <img src="../images/GamePlay.png" alt="Геймплей" class="gameplay-image">
             </div>
         </div>
 
-        <!-- 4. АВТОР (ПОСЛЕ ГЕЙМПЛЕЯ, ПЕРЕД ССЫЛКАМИ) -->
         <div class="content-grid">
-            <!-- Карточка Автора -->
             <div class="author-card">
                 <img src="../images/AutorIconBadWarlock.png" alt="Автор" class="author-avatar">
                 <div class="author-title">BadWarlock</div>
@@ -337,11 +313,9 @@
             </div>
         </div>
 
-        <!-- 5. ССЫЛКИ (В САМОМ КОНЦЕ) -->
         <div class="links-section">
             <h2 class="links-title">МОИ ПЛОЩАДКИ</h2>
             <div class="links-container">
-                <!-- ЗАМЕНИ ССЫЛКИ (href="...") НА СВОИ -->
                 <a href="https://t.me/bloody_arts" target="_blank" class="link-btn telegram">Telegram</a>
                 <a href="https://youtube.com/@atomnyvzriv?si=iblwzMDHo7abYrBf" target="_blank" class="link-btn youtube">YouTube</a>
                 <a href="https://max.ru/join/1tvUWBw6ITIcGy4VQ0pFKDNV_cpScLjmo90x12hFsSo" target="_blank" class="link-btn max">MAX</a>
